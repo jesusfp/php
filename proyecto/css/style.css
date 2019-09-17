@@ -1,0 +1,245 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height:100%;
+	background: aliceblue;
+}
+input{
+	margin: 10px;
+    padding: 0.2em;
+}
+.container{
+	padding: 1em;
+	display: block;
+}
+.login {
+	width: fit-content;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 5px;
+    background: white;
+}
+/* UTILIDADES */
+.tx-center{
+	text-align: center;
+}
+.tit-7{
+	font-size: 0.74em;
+}
+.tit-8{
+	font-size: 0.8em;
+}
+.login .txt-regis{
+	width: 76.5%;
+    /* display: flex; */
+    /* justify-content: center; */
+    display: block;
+    margin: 0 auto;
+}
+/*padding-top*/
+.p-1-top{
+    padding-top: 1em;
+}
+.p-2-top{
+    padding-top: 2em;
+}
+.p-3-top{
+    padding-top: 3em;
+}
+.vh-100{
+	height: calc(100% - 100px);
+}
+.p-06{
+	padding-top: 0.6em!important;
+    padding-bottom: 0.6em!important;
+}
+.p-08{
+	padding-top: 0.8em!important;
+    padding-bottom: 0.8em!important;
+}
+.login .form-control {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.login .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.m-0{
+	margin-bottom: 0;
+}
+.m-10-top{
+    margin-top: 10px
+}
+/************/
+.login input:hover{
+    border: 1px solid green;
+}
+
+.login input[value="REGISTRARSE"]{
+    margin-bottom: 0.5em;
+}
+.login .d-flex-column-center p{
+    font-size: 0.7em;
+    padding: 0;
+    margin: 0px 0px 0px 14px;
+}
+/*GALERIA*/
+#galeria{
+    position: absolute;
+}
+.galeria .thu{
+    width: 75px;
+    height: 75px;
+    display: block;
+    padding:1em;
+    border: 2px solid #000;
+    background: #fff;
+    transform: rotate(0deg);
+}
+.galeria .thu:hover{
+    /*transform: rotate(180deg);*/
+    background: red;
+}
+.galeria .d-flex>div{
+    margin: 1em;
+}
+.galeria img{
+    max-width: 100%;
+}
+.paginacion ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.paginacion ul li{
+    margin: 10px;
+}
+.paginacion ul li.active{
+    background: red;
+    padding: 10px;
+}
+.paginacion ul li a span{
+    color: #333;
+}
+.paginacion ul li.active a span{
+    color: #fff;
+}
+.paginacion .izq{
+    transform: rotate(180deg);
+}
+.paginacion a img{
+    width:24px;
+    height: auto;
+}
+.paginacion a{
+    text-decoration: none;
+}
+
+/**************/
+/* COLORES */
+
+.tx-red{
+	color: #a2132e;
+}
+/**/
+.login .tx-red, a.tx-white{
+	text-decoration: none;
+}
+.login .tx-white{
+	color: white;
+}
+
+/***********/
+/* BOTONES */
+.login .btn a{
+	text-decoration: none;
+	color: white;
+}
+.login .btn {
+	cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.login .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/*.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}*/
+
+
+/*.btn a:hover {
+    color: #212529;
+    text-decoration: none;
+}*/
+.login .btn:hover, a.btn:hover {
+	background-color: #fff;
+    color: #212529;
+    text-decoration: none;
+}
+
+
+/***********/
+.d-flex, .d-flex-center, .d-flex-space-between, .d-flex-column, .d-flex-column-reverse, .d-flex-column-center, .d-flex-vertical-align{
+	display: flex;
+}
+.d-flex-center{
+	justify-content: center;
+}
+.d-flex-space-between{
+	justify-content: space-between;
+}
+.d-flex-column{
+	flex-direction: column;
+}
+.d-flex-column-reverse{
+	flex-direction: column-reverse;
+}
+.d-flex-column-center{
+	justify-content: center;
+	flex-direction: column;
+}
+.d-flex-vertical-align{
+	justify-content: center;
+	align-items: center;
+}
